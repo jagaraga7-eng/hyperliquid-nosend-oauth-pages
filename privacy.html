@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="description" content="Hyperliquid NOSEND Backup の個人利用におけるデータの利用目的、最小権限、管理、利用停止と削除方法。">
+<title>プライバシーポリシー | Hyperliquid NOSEND Backup</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へ移動</a>
+<header class="site-header"><a class="brand" href="./">Hyperliquid NOSEND Backup</a>
+<nav aria-label="メインナビゲーション"><a href="./">アプリの説明</a><a href="./privacy.html" aria-current="page">プライバシー</a></nav></header>
+<main id="main" class="policy">
+<p class="eyebrow">PRIVACY POLICY</p><h1>プライバシーポリシー</h1><p class="lead">Hyperliquid NOSEND Backup</p><p class="small">制定・最終更新日：2026年10月17日</p>
+<p>本ポリシーは、運営者 jagaraga7-eng が、運営者本人だけを利用者とする Google Drive 監査ログバックアップ用途の OAuth アプリについて定めるデータ取り扱い方針です。一般向けサービスとして第三者の利用・データ受付は行いません。</p>
+<section><h2>1. 対象と現在の状態</h2><p>この GitHub Pages サイトは、説明とポリシーを公開する静的なサイトです。訪問者の Google アカウントへの接続、Google API の呼び出し、バックアップデータの受け取りは行いません。</p><p>バックアップ実装の稼働状況、具体的な要求スコープ、保存期間の自動制御は、この公開ページでは確認済みと表明しません。以下のアプリ側の取り扱いは運営方針であり、未確認の機能が実装済みであることを示すものではありません。機能を追加・変更する場合は、利用前に記載を更新します。</p></section>
+<section><h2>2. 取り扱うデータと利用目的</h2><p>OAuth を利用したバックアップ時には、次の情報を必要な範囲で取り扱う方針です。</p><ul><li>本人がバックアップ対象とした監査ログ：本人の記録保全と、必要時の確認のため。</li><li>バックアップファイルや保存先の識別情報、処理に必要なメタデータ：対象ファイルの保存・管理のため。</li><li>Google のアクセストークンや更新トークン等の認可情報：本人が許可した Google Drive 操作のため。</li></ul><p>対象ログに個人情報や取引に関する記録が含まれる場合も、本人の私的な保全以外には使用せず、GitHub の公開リポジトリや公開ページには掲載しません。Google アカウントのパスワードを、このサイトが受け取ることはありません。</p></section>
+<section><h2>3. 最小権限と本人の同意</h2><p>バックアップに必要な最小範囲の Google Drive 権限に限定する方針です。具体的なスコープは未確認であり、Drive 全体へのアクセスが技術的に制限済みであることや、特定のスコープが設定済みであることは保証しません。</p><p>本人は認可前に Google の同意画面で、アプリ名と要求権限を確認してください。用途に不要な権限がある場合は認可せず、設定を見直します。Google Drive の権限の種類は <a href="https://developers.google.com/workspace/drive/api/guides/api-specific-auth">Google の公式説明</a>で確認できます。</p></section>
+<section><h2>4. 利用・共有の制限</h2><p>Google API から得た情報の利用・他のアプリへの転送は、<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>（Limited Use の要件を含む）に従い、本ページに明記した本人用バックアップの目的に限定する方針です。</p><p>ユーザーデータを販売しません。広告配信、広告ターゲティング、信用評価、AI モデルの学習には利用せず、広告事業者、データ仲介業者、情報再販業者には提供しません。保存先は本人が管理する Google Drive とし、Google による処理には <a href="https://policies.google.com/privacy?hl=ja">Google のプライバシーポリシー</a>が適用されます。本人以外への共有や一般公開は行いません。法令により開示が必要な場合は、その必要な範囲に限って対応します。</p></section>
+<section><h2>5. 保存・保護と管理責任</h2><p>運営者と利用者は同一人物です。本人が保存先の Google Drive とバックアップ処理に使う管理環境を管理し、認可情報やログへのアクセスを本人に限定する方針です。認可情報は管理環境内で扱い、公開ソース、公開ページ、公開 Issues に含めません。</p><p>ログの保存は本人の監査・確認に必要な期間とし、不要になったバックアップと管理環境内のコピーは本人が手動で削除します。固定の保存日数や自動削除の実装は確認されていないため、一定期間後の自動消去を保証しません。利用をやめる場合は次の手順でアクセス権と保存データをそれぞれ処理します。</p></section>
+<section id="deletion"><h2>6. 利用停止・権限解除・データ削除</h2><ol><li><strong>バックアップの継続を止める：</strong>本人の管理環境で、このバックアップ用の処理・定期実行を利用している場合は停止します。既存の別用途の BOT や注文処理を、この公開サイトが操作することはありません。</li><li><strong>Google のアクセス権を解除する：</strong><a href="https://myaccount.google.com/connections">Google アカウントのサードパーティ接続</a>から Hyperliquid NOSEND Backup を選び、アクセス権を削除します。手順は <a href="https://support.google.com/accounts/answer/13533235?hl=ja">Google の公式ヘルプ</a>を参照してください。</li><li><strong>バックアップを削除する：</strong>本人の Google Drive で対象のバックアップファイルを削除します。完全な削除が必要な場合は、対象を十分に確認してからゴミ箱内の該当ファイルも削除します。Google 側の保管・復元の扱いは Google の仕様に従います。</li><li><strong>管理環境内のコピーを削除する：</strong>このバックアップ用途で保存したローカルコピーや認可情報がある場合は、本人が対象を確認して削除します。別用途で保持すべき原本・設定を誤って削除しないでください。</li></ol><p><strong>権限の解除だけでは、すでに保存したファイルやコピーは削除されません。</strong>この公開サイトには、自動削除機能や削除依頼フォームはありません。本人利用のため、削除は本人が保存先と管理環境で直接行います。</p></section>
+<section><h2>7. 公開サイトのアクセス情報</h2><p>本サイト独自の Cookie、広告、アクセス解析、外部スクリプト、入力フォームは使用していません。OAuth クライアント ID・Secret、トークン、API キー、認証ファイル、監査ログ、取引履歴、残高などの機密データは、公開リポジトリにも公開ページにも含めません。</p><p>ホスティング事業者 GitHub は、配信やセキュリティのために IP アドレス等のアクセス情報を扱う場合があります。詳しくは <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub のプライバシー声明</a>をご覧ください。</p></section>
+<section><h2>8. 問い合わせと変更</h2><p>運営・データ管理責任者：<a href="https://github.com/jagaraga7-eng">jagaraga7-eng</a>（個人）</p><p>公開ページの説明・ポリシーに関する連絡先：<a href="https://github.com/jagaraga7-eng/hyperliquid-nosend-oauth-pages/issues">リポジトリの Issues</a>。投稿内容は公開されるため、個人情報、ログ本文、取引情報、OAuth クライアント ID・Secret、トークン等を送らないでください。非公開の問い合わせメール窓口は、このページでは設けていません。</p><p>取り扱いを変更する場合は本ページを更新し、更新日を明記します。一般利用者への提供など利用対象を変える場合も、その前に必要な説明と手続きを見直します。本ページの公開は、Google による確認・審査の承認を示したり保証したりするものではありません。</p></section>
+</main><footer class="site-footer"><p>運営・データ管理：<a href="https://github.com/jagaraga7-eng">jagaraga7-eng</a>（個人）</p><p><a href="./">アプリの説明</a> · <a href="./privacy.html">プライバシーポリシー</a> · <a href="https://github.com/jagaraga7-eng/hyperliquid-nosend-oauth-pages">公開ページのソース</a></p><p>最終更新日：2026年10月17日</p></footer>
+</body>
+</html>
+

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="description" content="本人の監査ログを本人のGoogle Driveへ私的にバックアップするためのOAuthアプリの説明。公開サイトは説明専用です。">
+<title>Hyperliquid NOSEND Backup | アプリの説明</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へ移動</a>
+<header class="site-header"><a class="brand" href="./">Hyperliquid NOSEND Backup</a>
+<nav aria-label="メインナビゲーション"><a href="./" aria-current="page">アプリの説明</a><a href="./privacy.html">プライバシー</a></nav></header>
+<main id="main">
+<section class="hero"><p class="eyebrow">PERSONAL AUDIT LOG BACKUP</p><h1>監査ログを、<br>本人の管理下に。</h1><p class="lead">Hyperliquid NOSEND Backup は、運営者本人の監査ログを、本人が所有・管理する Google Drive に私的にバックアップするための OAuth アプリです。</p><p>利用対象は運営者本人だけです。一般利用者の登録・第三者のアカウントの受付は行いません。</p><a class="button" href="./privacy.html">データの取り扱いを確認</a></section>
+<section aria-labelledby="principles"><h2 id="principles">用途と運営方針</h2><div class="cards">
+<article class="card"><span class="number">01</span><h3>私的な記録の保全</h3><p>目的は監査ログの保存と、必要時の本人による確認です。この公開サイトには、注文・送金・取引の実行機能はありません。</p></article>
+<article class="card"><span class="number">02</span><h3>必要な権限だけ</h3><p>バックアップに必要な最小範囲の Google Drive 権限を用いる方針です。実際の要求スコープは未確認のため、特定の権限だけが設定済みとは表明しません。認可前に同意画面で確認してください。</p></article>
+<article class="card"><span class="number">03</span><h3>本人のためだけに利用</h3><p>ユーザーデータの販売、広告配信・広告ターゲティングへの利用、広告事業者やデータ仲介業者への提供は行いません。</p></article>
+</div></section>
+<section class="notice" aria-labelledby="status"><h2 id="status">この公開ページと実装の状態</h2><p><strong>このサイトで提供するもの：</strong>アプリの用途説明とプライバシーポリシーです。Google ログイン、OAuth コールバック、バックアップ処理、データの閲覧・削除の画面はありません。</p><p><strong>未確認のもの：</strong>バックアップ実装の稼働状況、実際の要求スコープ、保存期間の自動制御です。説明ページの公開は、これらの機能の実装完了や稼働確認を意味しません。</p><p><strong>将来変更する場合：</strong>機能やデータの取り扱いを変更する前に、この説明とポリシーを更新します。自動削除や一般向け提供を、実装済みの機能または確定した提供予定として案内しません。</p></section>
+<section aria-labelledby="public-data"><h2 id="public-data">GitHub の公開ページに機密データは含みません</h2><p>この公開リポジトリとページには、OAuth クライアント ID・Secret、アクセストークン・更新トークン、API キー、認証ファイル、監査ログ本文、取引履歴・残高などの取引情報を掲載しません。公開ページのソースにあるのは説明文と表示用ファイルだけです。</p><p>アプリ独自の広告、アクセス解析、Cookie、入力フォーム、外部スクリプトは使用していません。配信基盤である GitHub によるアクセス情報の取り扱いは、<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub のプライバシー声明</a>に従います。</p></section>
+<section aria-labelledby="contact"><h2 id="contact">問い合わせ・利用停止・削除</h2><p>ページの記載に関する連絡先は、運営者が管理する <a href="https://github.com/jagaraga7-eng/hyperliquid-nosend-oauth-pages/issues">このリポジトリの Issues</a> です。Issues は公開されます。ログ、取引情報、認証情報、個人情報は投稿しないでください。非公開の問い合わせメール窓口は、このページでは設けていません。</p><p>本人によるアクセス権の解除、Drive 上のバックアップと管理環境内のコピーの削除については、<a href="./privacy.html#deletion">プライバシーポリシーの削除手順</a>をご覧ください。</p></section>
+<p class="small">このアプリは個人が運営するもので、Google または Hyperliquid の公式サービス・提携サービスではありません。Google による OAuth アプリの確認・審査の完了や承認を保証するものではありません。</p>
+</main><footer class="site-footer"><p>運営・データ管理：<a href="https://github.com/jagaraga7-eng">jagaraga7-eng</a>（個人）</p><p><a href="./">アプリの説明</a> · <a href="./privacy.html">プライバシーポリシー</a> · <a href="https://github.com/jagaraga7-eng/hyperliquid-nosend-oauth-pages">公開ページのソース</a></p><p>最終更新日：2026年10月17日</p></footer>
+</body>
+</html>
+
